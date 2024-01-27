@@ -23,10 +23,10 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder){
     currfolder  = folder;
 
-    let relativePath = "./songs/";
+    // let relativePath = "./songs/";
 
     // let a = await fetch(relativePath);
-    let a = await fetch(`relativePath/${folder}/`)
+    let a = await fetch('https://raw.githubusercontent.com/RoshanGupta05/Spotify/main/songs/song1.mp3');
     let response = await a.text();
 
     console.log(response);
